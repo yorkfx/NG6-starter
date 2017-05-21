@@ -1,13 +1,15 @@
 @import '../common';
 
 .navbar {
-  height: 6.5rem;
+  height:6vh;
   background-color: $primaryColor;
-  padding: 1rem;
-
-  .nav-links,
+      background-image: url("http://dokynweb.com/assets/logo.png");
+    background-size: 12%;
+    background-position: center;
+    background-repeat: no-repeat;
   .logo {
-    display: inline-block;
+    display:inline-block;
+    font-size: 0;    
   }
 
   .logo {

@@ -1,11 +1,29 @@
 @import '../common';
 
-.hero {
-  background-color: $darkBgColor;
-  height: 50rem;
-  padding: 3rem;
 
-  * {
-    color: $lightTextColor;
-  }
+#mapa{
+	width: 100%;
+	height: 80vh;
+	background-color: #fff;
+	background-image: url("http://dokynweb.com/assets/mapa.png");
+	background-size: cover;
+	background-position: center;
+}
+
+#cel{
+	position: absolute;
+	width: 380px;
+	height: 650px;
+	right: 2%;
+	bottom: 15%;
+	background-image: url("http://dokynweb.com/assets/cel.png");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	.contenedorsito{
+		margin: 154px auto 0;
+		width: 70%;
+		height: 400px;
+		border:1px solid red;
+	}
 }
