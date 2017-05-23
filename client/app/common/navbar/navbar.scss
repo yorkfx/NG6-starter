@@ -1,7 +1,7 @@
 @import '../common';
 
 .navbar {
-  height:6vh;
+  height:60px;
   background-color: $primaryColor;
       background-image: url("http://dokynweb.com/assets/logo.png");
     background-size: 12%;
@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
   .logo {
     display:inline-block;
-    font-size: 0;    
+    font-size: 0;
   }
 
   .logo {
