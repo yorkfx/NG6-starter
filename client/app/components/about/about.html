@@ -2,12 +2,12 @@
 <section>
   <h2>Publicar oferta</h2>
   <form action="">
-    <input type="hidden" value="id_usuario">
-    <input type="hidden" value="date(now)">
+    <input type="hidden" value="id_usuario" required>
+    <input type="hidden" value="date(now)" required>
 
-      <input type="text" placeholder="Nombre">
-      <label for="">Categoria</label>
-      <select name="categoria" id="">
+      <input type="text" placeholder="Nombre" required>
+      <label for="categoria">Categoria</label>
+      <select name="categoria" id=""  required>
         <option value="value 1">Value 1</option>
         <option value="value 2">Value 2</option>
         <option value="value 3">Value 3</option>
@@ -15,8 +15,8 @@
       <label for="foto">Imagen del producto</label>
       <input type="file" name="foto">
       <label for="">Fecha que finaliza</label>
-      <input type="date" name="fecha_termina">
-      <textarea name="descripcion" id="" cols="30" rows="10"></textarea>
+      <input type="date" name="fecha_termina" required>
+      <textarea name="descripcion" id="" cols="30" rows="10" placeholder="Descripción de la Oferta" required></textarea>
       <br>
       <input type="submit" value="Publicar Oferta">
   </form>

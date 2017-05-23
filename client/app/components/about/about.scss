@@ -20,13 +20,25 @@ form{
 		border:1px solid silver;
 		width: 100%;
 		border-radius: 8px;
-		padding: 10px 6px;
+		padding: 10px 12px;
+	}
+	select{
+		-webkit-appearance: none;
+	    -moz-appearance: none;
+	    appearance: none;
+	    padding: 10px;
+	    width: 105%;
 	}
 	input[type="submit"]{
 		margin-top: 10px;
+		padding: 20px
 	}
 	textarea{
 		border:1px solid silver;
 		width: 100%;
+		border-radius: 8px;
+		padding: 10px 12px;
+		margin-top: 10px;
+		resize: none;
 	}
 }
