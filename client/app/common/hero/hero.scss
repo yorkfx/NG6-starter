@@ -15,7 +15,7 @@
 	width: 350px;
 	height: 620px;
 	right: 3%;
-	bottom: 8%;
+	bottom: 7%;
 	background-image: url("http://dokynweb.com/assets/cel.png");
 	background-size: 100%;
 	background-position: center;
@@ -23,7 +23,8 @@
 	.contenedorsito{
 		margin: 154px auto 0;
 		width: 69%;
-		height: 400px;
+		height: 365px;
+		border:1px solid red;
 		ul{
 			height: 400px;
 			overflow: auto;
@@ -46,7 +47,7 @@
 		width: 220px;
 		height: 80px;
 		display: inline-block;
-		margin: 10px 100px 0 0;
+		margin: 5px 100px 0 0;
 		font-size: 0;
 		letter-spacing: -999em;
 		background-image: url("https://play-storedownload.com/wp-content/uploads/2016/05/download-play-store-600x220.png");
