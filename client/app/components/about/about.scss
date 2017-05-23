@@ -1,3 +1,44 @@
 .about {
   color: red;
 }
+
+h2{
+	text-align: center;
+	font-size: 2em;
+}
+form{
+	width: 450px;
+	margin: 0 auto;
+	display: block;
+	font-size: 1.4em;
+	label{
+		display: block;
+		margin: 2px 0;
+		padding: 10px;
+	}
+	input, select{
+		border:1px solid silver;
+		width: 100%;
+		border-radius: 8px;
+		padding: 10px 12px;
+	}
+	select{
+		-webkit-appearance: none;
+	    -moz-appearance: none;
+	    appearance: none;
+	    padding: 10px;
+	    width: 105%;
+	}
+	input[type="submit"]{
+		margin-top: 10px;
+		padding: 20px
+	}
+	textarea{
+		border:1px solid silver;
+		width: 100%;
+		border-radius: 8px;
+		padding: 10px 12px;
+		margin-top: 10px;
+		resize: none;
+	}
+}
