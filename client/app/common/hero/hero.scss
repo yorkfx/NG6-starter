@@ -43,24 +43,30 @@
 	height: 90px;
 	background-color: #fff;
 	a{
-		border:1px solid red;
 		border-radius: 10px;
 		background-color: gold;
 		text-align: center;
 		line-height: 80px;
 		color: #fff;
+		font-size: 2em;
 		text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+		font-weight: bolder;
 		width: 220px;
 		height: 80px;
 		display: inline-block;
-		margin: 5px 100px 0 0;
-		font-size: 0;
+		margin: 5px 0 0 10px;
+		text-decoration: none;
+		font-weight: bolder;
+		background-image: linear-gradient(top, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%);
 		&:last-child{
+			background-color: transparent;
 			letter-spacing: -999em;
 			background-image: url("https://play-storedownload.com/wp-content/uploads/2016/05/download-play-store-600x220.png");
 			background-repeat: no-repeat;
 			background-size: 100%;
 			float: right;
+			margin: 0 100px 0 0;
+			font-size: 0;
 		}
 	}
 }
