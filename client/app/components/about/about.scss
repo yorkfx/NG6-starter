@@ -2,7 +2,10 @@
   color: red;
 }
 
-
+h2{
+	text-align: center;
+	font-size: 2em;
+}
 form{
 	width: 450px;
 	margin: 0 auto;
@@ -18,7 +21,9 @@ form{
 		width: 100%;
 		border-radius: 8px;
 		padding: 10px 6px;
-
+	}
+	input[type="submit"]{
+		margin-top: 10px;
 	}
 	textarea{
 		border:1px solid silver;
