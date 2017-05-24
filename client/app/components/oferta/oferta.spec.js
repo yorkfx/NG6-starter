@@ -1,54 +1,49 @@
-import OfertaModule from './oferta'
+import OfertaModule from './oferta';
+import OfertaController from './oferta.controller';
+import OfertaComponent from './oferta.component';
+import OfertaTemplate from './oferta.html';
 
 describe('Oferta', () => {
-  let $rootScope, $state, $location, $componentController, $compile;
+  let $rootScope, makeController;
 
   beforeEach(window.module(OfertaModule));
-
-  beforeEach(inject(($injector) => {
-    $rootScope = $injector.get('$rootScope');
-    $componentController = $injector.get('$componentController');
-    $state = $injector.get('$state');
-    $location = $injector.get('$location');
-    $compile = $injector.get('$compile');
+  beforeEach(inject((_$rootScope_) => {
+    $rootScope = _$rootScope_;
+    makeController = () => {
+      return new OfertaController();
+    };
   }));
 
   describe('Module', () => {
     // top-level specs: i.e., routes, injection, naming
-    it('About component should be visible when navigates to /oferta', () => {
-      $location.url('/oferta');
-      $rootScope.$digest();
-      expect($state.current.component).to.eq('oferta');
-    });
   });
 
   describe('Controller', () => {
     // controller specs
-    let controller;
-    beforeEach(() => {
-      controller = $componentController('oferta', {
-        $scope: $rootScope.$new()
-      });
-    });
-
-    it('has a name property', () => { // erase if removing this.name from the controller
+    it('has a name property [REMOVE]', () => { // erase if removing this.name from the controller
+      let controller = makeController();
       expect(controller).to.have.property('name');
     });
   });
 
-  describe('View', () => {
-    // view layer specs.
-    let scope, template;
+  describe('Template', () => {
+    // template specs
+    // tip: use regex to ensure correct bindings are used e.g., {{  }}
+    it('has name in template [REMOVE]', () => {
+      expect(OfertaTemplate).to.match(/{{\s?\$ctrl\.name\s?}}/g);
+    });
+  });
 
-    beforeEach(() => {
-      scope = $rootScope.$new();
-      template = $compile('<oferta></oferta>')(scope);
-      scope.$apply();
+  describe('Component', () => {
+    // component/directive specs
+    let component = OfertaComponent;
+
+    it('includes the intended template', () => {
+      expect(component.template).to.equal(OfertaTemplate);
     });
 
-    it('has name in template', () => {
-      expect(template.find('h1').html()).to.eq('oferta');
+    it('invokes the right controller', () => {
+      expect(component.controller).to.equal(OfertaController);
     });
-
   });
 });
