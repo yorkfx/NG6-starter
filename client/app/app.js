@@ -4,6 +4,7 @@ import Common from './common/common';
 import Components from './components/components';
 import AppComponent from './app.component';
 import ngResource from 'angular-resource';
+// import appService from './service/service';
 import 'normalize.css';
 
 angular.module('app', [
@@ -11,6 +12,7 @@ angular.module('app', [
     Common,
     Components,
     ngResource
+    // , appService
   ])
   .config(($locationProvider) => {
     "ngInject";
