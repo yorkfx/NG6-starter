@@ -1,14 +1,12 @@
-const ofersService = ($http) => {
-
-  const obtener = () => {
+const offersService = ($http) => {
+  "ngInject";
+  const get = () => {
     const url = "http://13.84.167.160:5000/api/v1/ofertas";
-    return $http.get(url).then(response => {
-      response
-    })
+    return $http.get(url);
   };
   return {
-    obtener
+    get
   }
 };
 
-export default ofersService;
+export default offersService;

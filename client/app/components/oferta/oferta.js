@@ -5,8 +5,7 @@ import ofertaComponent from './oferta.component';
 let ofertaModule = angular.module('oferta', [
   uiRouter
 ])
-
-.component('oferta', ofertaComponent)
+  .component('oferta', ofertaComponent)
 
 .name;
 
