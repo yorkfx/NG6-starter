@@ -4,15 +4,15 @@ import Common from './common/common';
 import Components from './components/components';
 import AppComponent from './app.component';
 import ngResource from 'angular-resource';
-// import appService from './service/service';
+import Service from './service/service';
 import 'normalize.css';
 
 angular.module('app', [
     uiRouter,
     Common,
     Components,
-    ngResource
-    // , appService
+    ngResource,
+    Service.name
   ])
   .config(($locationProvider) => {
     "ngInject";
