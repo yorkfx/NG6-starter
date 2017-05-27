@@ -1,6 +1,14 @@
 class HeroController {
-  constructor() {
+  constructor($log, OfertasService) {
+    'ngInject';
+
     this.name = 'hero';
+    let vm = this;
+
+    $log.log('OfertasController');
+
+    vm.ofertas = OfertasService.data;
+
   }
 }
 

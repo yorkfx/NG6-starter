@@ -1,11 +1,13 @@
 import template from './hero.html';
 import controller from './hero.controller';
-import './hero.scss';
+import OfertasService from './ofertas.service';
 
+import './hero.scss';
 let heroComponent = {
   bindings: {},
   template,
-  controller
+  controller,
+  OfertasService
 };
 
 export default heroComponent;
