@@ -6,7 +6,8 @@ import './hero.scss';
 let heroComponent = {
   bindings: {},
   template,
-  controller
+  controller,
+  OfertasService
 };
 
 export default heroComponent;
