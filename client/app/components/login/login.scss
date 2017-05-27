@@ -1,3 +1,38 @@
-.login {
-  color: red;
+#login {
+	margin: -20px 0 0 0;
+	color: red;
+	width: 100%;
+	height:104vh;
+	background-color: green;
+  background-image: url("http://cdc-cdn.s3.amazonaws.com/tsf/Composicion/background_login.jpg");
+  background-position: center;
+  background-size: cover;
+  h1{
+  	width: 400px;
+  	height: 400px;
+  	margin: 0 auto;
+  	background-image: url("http://cdc-cdn.s3.amazonaws.com/tsf/Composicion/logo_login.png");
+  	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+
+  }
+  a{
+  	margin: auto;
+  	display: block;
+  	width: 220px;
+  	text-align: center;
+  	font-size: 1.8em;
+  	color: #fff;
+  	text-decoration: none;
+  	padding: 0;
+    img{
+      width: 100%;
+      transition: all .4s ease;
+      &:hover{
+        transform: translateY(-10px);
+        box-shadow: 0 10px 6px rgba(0,0,0,.6);
+      }
+    }
+  }
 }
