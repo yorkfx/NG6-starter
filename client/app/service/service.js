@@ -1,8 +1,6 @@
-
-import offersService from './ofers/ofers.service'
+import offersService from './ofers/ofers.service';
 
 const sessionModule = angular.module('app.service', [])
-.factory('Offers',offersService)
-.factory("Postoffers", Postoffers);
+.factory('Offers',offersService);
 
 export default sessionModule;
