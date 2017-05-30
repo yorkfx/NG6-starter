@@ -4,6 +4,7 @@ import Common from './common/common';
 import Components from './components/components';
 import AppComponent from './app.component';
 import ngResource from 'angular-resource';
+import angularfire from 'angularfire';
 import Service from './service/service';
 import 'normalize.css';
 
@@ -12,6 +13,7 @@ angular.module('app', [
     Common,
     Components,
     ngResource,
+    angularfire,
     Service.name
   ])
   .config(($locationProvider) => {
