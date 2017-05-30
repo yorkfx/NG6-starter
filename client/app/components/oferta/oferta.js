@@ -5,7 +5,17 @@ import ofertaComponent from './oferta.component';
 let ofertaModule = angular.module('oferta', [
   uiRouter
 ])
-  .component('oferta', ofertaComponent)
+
+.config(($stateProvider) => {
+  "ngInject";
+  $stateProvider
+    .state('oferta', {
+      url: '/oferta',
+      component: 'oferta'
+    });
+})
+
+.component('oferta', ofertaComponent)
 
 .name;
 
