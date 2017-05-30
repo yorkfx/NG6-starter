@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body ng-app="app" ng-controller="appCtrl">
+<script
+    src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+<script
+        src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCZaG8rwNT8TG3dPb0a0NAe5aCXMJvHUzM&language=en"></script>
+  <script type="text/javascript" src="geoLoc.js"></script>
+<h3>Google Maps</h3>
+
+    <!-- search/go to current location -->
+    <div class="text-right">
+        <div class="input-append text-right">
+            <input type="text" ng-model="search"/>
+            <button class="btn" type="button" ng-click="geoCode()" ng-disabled="search.length == 0" title="search" >
+              <i class="icon-search"></i>Buscar este lugar
+            </button>
+            <button class="btn" type="button" ng-click="gotoCurrentLocation()" title="current location">
+              <i class="icon-home"></i>Buscar mi ubicación
+            </button>
+        </div>
+    </div>
+
+    <!-- map -->
+    <app-map style="height:400px;margin:12px;box-shadow:0 3px 25px black;"
+        center="loc"
+        markers="cities"
+    > 
+    </app-map>
+
+    <!-- list of airports -->
+    <div class="container-fluid">
+        <div class="span3 btn" 
+            ng-repeat="a in cities"
+            ng-click="gotoLocation(a.lat, a.lon)">
+            <b>{{a.place}}</b>: {{a.desc}}
+        </div>
+    </div>
+</body>
