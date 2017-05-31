@@ -1,9 +1,10 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
+import angularfire from 'angularfire';
 import loginComponent from './login.component';
 
 let loginModule = angular.module('login', [
-  uiRouter
+  uiRouter, angularfire
 ])
 
 .config(($stateProvider) => {
